@@ -1,0 +1,284 @@
+/* Variables CSS */
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2c3e50;
+    --color-fondo: #ffffff;
+    --color-texto: #333;
+    --fuente-principal: 'Roboto', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    background: #2a366b;
+    background: radial-gradient(circle,rgba(16, 20, 56, 1) 39%, rgba(64, 33, 33, 1) 100%);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #101438;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.7s;
+}
+
+.nav-links a:hover {
+    color: var(--color-primario); /* Pseudoclase hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images5.alphacoders.com/516/516663.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 5rem 2rem;
+    color: white;
+}
+
+/* Categorías */
+.categorias {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.categoria-grid{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+
+}
+.categoria-grid a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto del contenedor */
+}
+
+.categoria-card {
+    background: #402121;
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    max-width: 500px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Productos */
+.productos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.productos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.producto-card {
+    background: rgb(33, 28, 95);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    color: white;
+    box-shadow: 5px 5px 75px rgba(0, 0, 0, 0.4);
+}
+
+.producto-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    background-color: rgb(34, 23, 75);
+    color: white;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    
+}
+
+.btn {
+    background-color: rgba(64, 33, 33, 1);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    border: 1px solid #000000;
+
+}
+
+.btn:hover {
+    background-color: rgb(33, 28, 95);;
+    color: white;
+    
+}
+
+/* Footer */
+.footer {
+    background-color: #101438;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* Formulario */
+.formulario-contacto {
+    padding: 2rem;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .categoria-grid,
+    .productos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+.slider-frame {
+	width: auto;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+.proxi{
+font-size: 20px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  
+}
+
+.titproduc {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.detalles{
+    background-color: rgba(64, 33, 33, 1);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
+    
+}
+.titlecontac{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+.contact-form{
+    color: white;
+    
+}
+.form-control{
+    background-color: rgba(64, 33, 33, 1);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
