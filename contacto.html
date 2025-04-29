@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PuertoGames | Contacto</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptable a móviles -->
+    <title>PuertoGames | Contacto</title> <!-- Título que aparece en la pestaña -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Enlaza el archivo de estilos CSS -->
 </head>
 <body>
 
-    <!-- Navegación -->
+    <!-- Barra de navegación -->
     <nav class="navbar">
-        <h1>PuertoGames</h1>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="producto.html">Producto</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+        <h1>PuertoGames</h1> 
+        <ul class="nav-links"> <!-- Menú de navegación -->
+            <li><a href="index.html">Inicio</a></li> <!-- Enlace a página principal -->
+            <li><a href="producto.html">Producto</a></li> <!-- Enlace a productos -->
+            <li><a href="contacto.html">Contacto</a></li> <!-- Enlace actual (contacto) -->
         </ul>
     </nav>
 
-    <!-- Formulario de Contacto -->
+    <!-- Sección del formulario de contacto -->
     <section class="formulario-contacto">
-        <h2 class="titlecontac">Contáctanos</h2>
-        <form action="#" class="contact-form">
+        <h2 class="titlecontac">Contáctanos</h2> 
+        
+        <!-- Formulario de contacto -->
+        <form action="#" class="contact-form"> 
+            
+            <!-- Grupo para el campo Nombre -->
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required class="form-control">
+                <input type="text" id="nombre" name="nombre" required class="form-control"> 
+                
             </div>
+            
+            <!-- Grupo para el campo Email -->
             <div class="form-group">
                 <label for="correo">Correo Electrónico:</label>
                 <input type="email" id="correo" name="correo" required class="form-control">
+          
             </div>
+            
+            <!-- Grupo para el campo Mensaje -->
             <div class="form-group">
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required class="form-control"></textarea>
+             
             </div>
-            <button  type="submit" class="btn">Enviar Mensaje</button>
+            
+            <!-- Botón para enviar el formulario -->
+            <button type="submit" class="btn">Enviar Mensaje</button>
         </form>
     </section>
 
-    <!-- Footer -->
+    <!-- Pie de página -->
     <footer class="footer">
-        <p>&copy; 2025 PuertoGames. Todos los derechos reservados.</p>
+        <p>&copy; 2025 PuertoGames. Todos los derechos reservados.</p> <!-- Información de copyright -->
     </footer>
 
 </body>
